@@ -21,3 +21,9 @@
 - styled-components
 - tailwindcss
 - yup
+
+# EXAMPLE
+
+Change the branch to the example name to see the specific code
+
+- instagram clone : [example/instagram-clone](https://github.com/seriusanbudi/next-project/tree/example/instagram-clone)
