@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Head>
-        <title>Your best app name</title>
+        <title>InstantGram</title>
       </Head>
       <ThemeProvider theme={theme["default-theme"]}>
         <Component {...pageProps} />

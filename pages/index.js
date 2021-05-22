@@ -1,8 +1,19 @@
+import styled from "styled-components";
+import TopNav from "components/TopNav";
+import StoryContainer from "components/containers/StoryContainer";
+import PostContainer from "components/containers/PostContainer";
+import Nav from "components/Nav";
+
 const Home = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
-      <h3>Let's start a new journey</h3>
-    </div>
+    <>
+      <TopNav />
+      <div style={{ paddingTop: "64px", paddingBottom: "64px" }}>
+        <StoryContainer />
+        <PostContainer />
+      </div>
+      <Nav />
+    </>
   );
 };
 
