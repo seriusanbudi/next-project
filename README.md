@@ -1,23 +1,3 @@
-# SCRIPT
+Example using this boiler plate to create simple instagram clone UI.
 
-- run `npm install` to install the dependecies
-- run `npm run dev` to run development server
-
-# INSTALLED PACKAGE
-
-- axios
-- date-fns
-- date-fns
-- framer-motion
-- numeral
-- numeral
-- polished
-- react-hook-form
-- react-icons
-- react-redux
-- react-select
-- react-table
-- redux
-- styled-components
-- tailwindcss
-- yup
+_Note: See the result on the result.png_
