@@ -1,6 +1,6 @@
 # SCRIPT
 
-- run `npm run install` to install the dependecies
+- run `npm install` to install the dependecies
 - run `npm run dev` to run development server
 
 # INSTALLED PACKAGE
