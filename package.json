@@ -30,7 +30,7 @@
     "autoprefixer": "^10.2.5",
     "babel-plugin-styled-components": "latest",
     "postcss": "^8.3.0",
-    "redux-devtools": "^3.7.0",
+    "redux-devtools-extension": "^2.13.9",
     "tailwindcss": "^2.1.2"
   }
 }

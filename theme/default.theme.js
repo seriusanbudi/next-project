@@ -1,0 +1,4 @@
+const defaultTheme = {
+  colors: {},
+  fontSize: {},
+};
