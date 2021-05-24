@@ -5,7 +5,10 @@ import {
   IoChatbubbleOutline,
   IoShareOutline,
   IoBookmarkOutline,
+  IoHeartSharp,
 } from "react-icons/io5";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 const PostHeader = styled("div")`
   height: 72px;
@@ -65,13 +68,35 @@ const PostComment = styled("div")`
   padding: 0px 12px;
 `;
 
-const Post = () => {
+const Post = (props) => {
+  const { username, likes, timestamp } = props;
+
+  const [isLiked, setIsLiked] = useState(false);
+  const routers = useRouter();
+
+  const handleLike = () => {
+    setIsLiked(!isLiked);
+  };
+
   return (
     <div className="mb-8">
       <PostHeader>
         <div className="flex items-center gap-2">
-          <Profile>Foto</Profile>
-          <div className="inline-block">Username</div>
+          <Profile
+            onClick={() => {
+              routers.push(`/${username}`);
+            }}
+          >
+            Foto
+          </Profile>
+          <div
+            className="inline-block"
+            onClick={() => {
+              routers.push(`/${username}`);
+            }}
+          >
+            {username}
+          </div>
         </div>
         <div>
           <MoreButton>
@@ -82,8 +107,13 @@ const Post = () => {
       <PostBody>foto here</PostBody>
       <PostAction>
         <div className="flex gap-2">
-          <ActionButton>
-            <IoHeartOutline />
+          <ActionButton
+            onClick={() => {
+              handleLike();
+            }}
+          >
+            {isLiked && <IoHeartSharp style={{ color: "red" }} />}
+            {!isLiked && <IoHeartOutline />}
           </ActionButton>
           <ActionButton>
             <IoChatbubbleOutline />
@@ -99,7 +129,7 @@ const Post = () => {
         </div>
       </PostAction>
       <PostDescription>
-        <div className="text-xs">523 Likes</div>
+        <div className="text-xs">{likeLabel(likes)}</div>
         <div>
           <span className="font-bold">mikunendoroid</span> lorem ipsum dolor sit
           amet
@@ -118,10 +148,17 @@ const Post = () => {
             </button>
           </div>
         </div>
-        <div className="text-xs uppercase ">14 Hours ago</div>
+        <div className="text-xs uppercase ">{timestamp}</div>
       </PostComment>
     </div>
   );
 };
 
 export default Post;
+
+const likeLabel = (count) => {
+  if (count === 0) return "No Like";
+  if (count === 1) return "1 Like";
+
+  return `${count} Likes`;
+};
