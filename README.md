@@ -7,9 +7,7 @@
 
 - axios
 - date-fns
-- date-fns
 - framer-motion
-- numeral
 - numeral
 - polished
 - react-hook-form
