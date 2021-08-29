@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
     <Provider store={store}>
       <Head>
         <title>Your best app name</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <ThemeProvider theme={theme["default-theme"]}>
         <Component {...pageProps} />
