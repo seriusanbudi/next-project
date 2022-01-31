@@ -11,6 +11,7 @@
     "@hookform/resolvers": "^2.5.1",
     "axios": "^0.21.1",
     "date-fns": "^2.21.3",
+    "firebase": "^9.6.5",
     "framer-motion": "^4.1.17",
     "next": "10.2.2",
     "numeral": "^2.0.6",
@@ -30,7 +31,7 @@
     "autoprefixer": "^10.2.5",
     "babel-plugin-styled-components": "latest",
     "postcss": "^8.3.0",
-    "tailwindcss": "^3.0.2",
-    "redux-devtools-extension": "^2.13.9"
+    "redux-devtools-extension": "^2.13.9",
+    "tailwindcss": "^3.0.2"
   }
 }
