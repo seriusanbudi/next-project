@@ -25,3 +25,7 @@
 Change the branch to the example name to see the specific code
 
 - instagram clone : [example/instagram-clone](https://github.com/seriusanbudi/next-project/tree/example/instagram-clone)
+
+## Deploy to Google Cloud Run
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
